@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>AI Crop Recommendation</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-success">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+
+            🌾 AI Crop Recommendation System
+
+            <br>
+
+            <small>
+
+                ಬೆಳೆ ಶಿಫಾರಸು ವ್ಯವಸ್ಥೆ
+
+            </small>
+
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="container mt-5">
+
+{% if success %}
+
+<div class="card shadow-lg">
+
+<div class="card-body">
+
+<h2 class="text-center text-success mb-4">
+
+🌾 Prediction Result
+
+<br>
+
+<small>
+
+ಬೆಳೆ ಶಿಫಾರಸು
+
+</small>
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<h5>
+
+📍 District
+
+</h5>
+
+<p>
+
+{{ district }}
+
+</p>
+
+<h5>
+
+🌱 Soil Type
+
+</h5>
+
+<p>
+
+{{ soil_type }}
+
+</p>
+
+</div>
+
+<div class="col-md-6 text-center">
+
+<h5>
+
+🌾 Recommended Crop
+
+</h5>
+
+<h2 class="text-success">
+
+{{ recommended_crop }}
+
+</h2>
+
+<h3 class="text-primary">
+
+{{ recommended_crop_kn }}
+
+</h3>
+
+</div>
+
+</div>
+
+<hr>
+<!-- ========================================= -->
+<!-- Weather Information -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+🌦 Live Weather
+
+<br>
+
+<small>
+
+ಪ್ರಸ್ತುತ ಹವಾಮಾನ
+
+</small>
+
+</h3>
+
+<div class="row mt-3">
+
+    <div class="col-md-4">
+
+        <div class="card text-center shadow">
+
+            <div class="card-body">
+
+                <h5>🌡 Temperature</h5>
+
+                <h6>ತಾಪಮಾನ</h6>
+
+                <h3>{{ weather.temperature }} °C</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card text-center shadow">
+
+            <div class="card-body">
+
+                <h5>💧 Humidity</h5>
+
+                <h6>ಆರ್ದ್ರತೆ</h6>
+
+                <h3>{{ weather.humidity }} %</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card text-center shadow">
+
+            <div class="card-body">
+
+                <h5>🌧 Rainfall</h5>
+
+                <h6>ಮಳೆ</h6>
+
+                <h3>{{ weather.rainfall }} mm</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<hr>
+
+<!-- ========================================= -->
+<!-- Soil Information -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+🌱 Soil Information
+
+<br>
+
+<small>
+
+ಮಣ್ಣಿನ ಮಾಹಿತಿ
+
+</small>
+
+</h3>
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-success">
+
+<tr>
+
+<th>Parameter</th>
+
+<th>ಮಾನದಂಡ</th>
+
+<th>Value</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Nitrogen</td>
+
+<td>ಸಾರಜನಕ</td>
+
+<td>{{ soil.nitrogen }}</td>
+
+</tr>
+
+<tr>
+
+<td>Phosphorus</td>
+
+<td>ರಂಜಕ</td>
+
+<td>{{ soil.phosphorus }}</td>
+
+</tr>
+
+<tr>
+
+<td>Potassium</td>
+
+<td>ಪೊಟ್ಯಾಸಿಯಂ</td>
+
+<td>{{ soil.potassium }}</td>
+
+</tr>
+
+<tr>
+
+<td>pH</td>
+
+<td>ಮಣ್ಣಿನ pH</td>
+
+<td>{{ soil.ph }}</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<hr>
+<!-- ========================================= -->
+<!-- Top 3 Crop Predictions -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+🏆 Top 3 Recommended Crops
+
+<br>
+
+<small>
+
+ಅತ್ಯುತ್ತಮ 3 ಬೆಳೆ ಶಿಫಾರಸುಗಳು
+
+</small>
+
+</h3>
+
+<div class="table-responsive">
+
+<table class="table table-hover table-bordered">
+
+<thead class="table-success">
+
+<tr>
+
+<th>Rank</th>
+
+<th>Crop (English)</th>
+
+<th>ಬೆಳೆ (Kannada)</th>
+
+<th>Confidence</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for crop in top_predictions %}
+
+<tr>
+
+<td>
+
+{{ loop.index }}
+
+</td>
+
+<td>
+
+{{ crop.crop }}
+
+</td>
+
+<td>
+
+{{ crop.crop_kn }}
+
+</td>
+
+<td>
+
+{{ crop.confidence }} %
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+<hr>
+
+<!-- ========================================= -->
+<!-- Selected Crop Analysis -->
+<!-- ========================================= -->
+
+{% if user_crop %}
+
+<h3 class="mt-4 text-success">
+
+🌾 Selected Crop Analysis
+
+<br>
+
+<small>
+
+ಆಯ್ಕೆ ಮಾಡಿದ ಬೆಳೆ ವಿಶ್ಲೇಷಣೆ
+
+</small>
+
+</h3>
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<p>
+
+<strong>Selected Crop:</strong>
+
+<br>
+
+ಆಯ್ಕೆ ಮಾಡಿದ ಬೆಳೆ
+
+<br>
+
+{{ user_crop.selected_crop }}
+
+</p>
+
+<p>
+
+<strong>AI Recommended Crop:</strong>
+
+<br>
+
+AI ಶಿಫಾರಸು ಮಾಡಿದ ಬೆಳೆ
+
+<br>
+
+{{ user_crop.recommended_crop }}
+
+{% if user_crop.recommended_crop_kn %}
+
+<br>
+
+{{ user_crop.recommended_crop_kn }}
+
+{% endif %}
+
+</p>
+
+<p>
+
+<strong>Confidence:</strong>
+
+{{ user_crop.confidence }} %
+
+</p>
+
+{% if user_crop.recommended %}
+
+<div class="alert alert-success">
+
+✅ Your selected crop is suitable.
+
+<br>
+
+✅ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಬೆಳೆ ಸೂಕ್ತವಾಗಿದೆ.
+
+</div>
+
+{% else %}
+
+<div class="alert alert-danger">
+
+❌ Your selected crop is not recommended.
+
+<br>
+
+❌ ನೀವು ಆಯ್ಕೆ ಮಾಡಿದ ಬೆಳೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿಲ್ಲ.
+
+</div>
+
+{% endif %}
+
+</div>
+
+</div>
+
+{% endif %}
+
+<hr>
+<!-- ========================================= -->
+<!-- Market Information -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+💰 Market Information
+
+<br>
+
+<small>
+
+ಮಾರುಕಟ್ಟೆ ಮಾಹಿತಿ
+
+</small>
+
+</h3>
+
+{% if market.success %}
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-success">
+
+<tr>
+
+<th>Parameter</th>
+
+<th>ವಿವರ</th>
+
+<th>Value</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Average Price</td>
+
+<td>ಸರಾಸರಿ ಬೆಲೆ</td>
+
+<td>₹ {{ market.average_price }}/Quintal</td>
+
+</tr>
+
+<tr>
+
+<td>Highest Price</td>
+
+<td>ಗರಿಷ್ಠ ಬೆಲೆ</td>
+
+<td>₹ {{ market.highest_price }}/Quintal</td>
+
+</tr>
+
+<tr>
+
+<td>Lowest Price</td>
+
+<td>ಕನಿಷ್ಠ ಬೆಲೆ</td>
+
+<td>₹ {{ market.lowest_price }}/Quintal</td>
+
+</tr>
+
+<tr>
+
+<td>Latest Price</td>
+
+<td>ಇತ್ತೀಚಿನ ಬೆಲೆ</td>
+
+<td>₹ {{ market.latest_price }}/Quintal</td>
+
+</tr>
+
+<tr>
+
+<td>Trend</td>
+
+<td>ಬೆಲೆ ಪ್ರವೃತ್ತಿ</td>
+
+<td>{{ market.trend }}</td>
+
+</tr>
+
+<tr>
+
+<td>Market</td>
+
+<td>ಮಾರುಕಟ್ಟೆ</td>
+
+<td>{{ market.market }}</td>
+
+</tr>
+
+<tr>
+
+<td>District</td>
+
+<td>ಜಿಲ್ಲೆ</td>
+
+<td>{{ market.district }}</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+{% else %}
+
+<div class="alert alert-warning">
+
+{{ market.message }}
+
+</div>
+
+{% endif %}
+
+<hr>
+
+<!-- ========================================= -->
+<!-- Disease Risk -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+🦠 Disease Risk
+
+<br>
+
+<small>
+
+ರೋಗದ ಅಪಾಯ
+
+</small>
+
+</h3>
+
+{% if disease.success %}
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-danger">
+
+<tr>
+
+<th>Parameter</th>
+
+<th>ವಿವರ</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>High Humidity</td>
+
+<td>ಹೆಚ್ಚಿನ ಆರ್ದ್ರತೆ</td>
+
+<td>{{ disease.humidity_risk }}</td>
+
+</tr>
+
+<tr>
+
+<td>High Temperature</td>
+
+<td>ಹೆಚ್ಚಿನ ತಾಪಮಾನ</td>
+
+<td>{{ disease.high_temperature_risk }}</td>
+
+</tr>
+
+<tr>
+
+<td>Low Temperature</td>
+
+<td>ಕಡಿಮೆ ತಾಪಮಾನ</td>
+
+<td>{{ disease.low_temperature_risk }}</td>
+
+</tr>
+
+<tr>
+
+<td>Heavy Rainfall</td>
+
+<td>ಭಾರಿ ಮಳೆ</td>
+
+<td>{{ disease.heavy_rainfall_risk }}</td>
+
+</tr>
+
+<tr>
+
+<td>Severity</td>
+
+<td>ತೀವ್ರತೆ</td>
+
+<td>{{ disease.severity }}</td>
+
+</tr>
+
+<tr>
+
+<td>Prevention</td>
+
+<td>ತಡೆಗಟ್ಟುವಿಕೆ</td>
+
+<td>{{ disease.prevention }}</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+{% else %}
+
+<div class="alert alert-warning">
+
+{{ disease.message }}
+
+</div>
+
+{% endif %}
+
+<hr>
+
+<!-- ========================================= -->
+<!-- Crop Advisory -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+📋 Crop Advisory
+
+<br>
+
+<small>
+
+ಬೆಳೆ ಸಲಹೆ
+
+</small>
+
+</h3>
+
+{% if advisory.success %}
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<p>
+
+<strong>General Advisory</strong>
+
+<br>
+
+ಸಾಮಾನ್ಯ ಸಲಹೆ
+
+<br><br>
+
+{{ advisory.advisory }}
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Fertilizer Recommendation</strong>
+
+<br>
+
+ಗೊಬ್ಬರ ಶಿಫಾರಸು
+
+<br><br>
+
+{{ advisory.fertilizer_recommendation }}
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Irrigation Tip</strong>
+
+<br>
+
+ನೀರಾವರಿ ಸಲಹೆ
+
+<br><br>
+
+{{ advisory.irrigation_tip }}
+
+</p>
+
+<hr>
+
+<p>
+
+<strong>Best Practice</strong>
+
+<br>
+
+ಅತ್ಯುತ್ತಮ ಕೃಷಿ ವಿಧಾನ
+
+<br><br>
+
+{{ advisory.best_practice }}
+
+</p>
+
+</div>
+
+</div>
+
+{% else %}
+
+<div class="alert alert-warning">
+
+{{ advisory.message }}
+
+</div>
+
+{% endif %}
+
+<hr>
+<!-- ========================================= -->
+<!-- Government Schemes -->
+<!-- ========================================= -->
+
+<h3 class="mt-4 text-success">
+
+🏛 Government Schemes
+
+<br>
+
+<small>
+
+ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು
+
+</small>
+
+</h3>
+
+{% if schemes.success %}
+
+<div class="table-responsive">
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-success">
+
+<tr>
+
+<th>Scheme</th>
+
+<th>ಯೋಜನೆ</th>
+
+<th>Category</th>
+
+<th>Benefit</th>
+
+<th>Eligibility</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for scheme in schemes.schemes %}
+
+<tr>
+
+<td>{{ scheme.scheme_name }}</td>
+
+<td>{{ scheme.scheme_name }}</td>
+
+<td>{{ scheme.category }}</td>
+
+<td>{{ scheme.benefit }}</td>
+
+<td>{{ scheme.eligibility }}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+{% else %}
+
+<div class="alert alert-warning">
+
+{{ schemes.message }}
+
+</div>
+
+{% endif %}
+
+<hr>
+
+<!-- ========================================= -->
+<!-- Back Button -->
+<!-- ========================================= -->
+
+<div class="text-center mt-5 mb-4">
+
+<a href="/"
+
+class="btn btn-success btn-lg">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back to Home
+
+<br>
+
+<small>
+
+ಮುಖಪುಟಕ್ಕೆ ಹಿಂದಿರುಗಿ
+
+</small>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+{% else %}
+
+<div class="container mt-5">
+
+<div class="alert alert-danger text-center shadow">
+
+<h2>
+
+{{ message }}
+
+</h2>
+
+<br>
+
+<a href="/"
+
+class="btn btn-primary">
+
+Go Back
+
+<br>
+
+<small>
+
+ಹಿಂದೆ ಹೋಗಿ
+
+</small>
+
+</a>
+
+</div>
+
+</div>
+
+{% endif %}
+
+<footer class="bg-success text-white text-center mt-5 p-4">
+
+<h4>
+
+🌾 AI Crop Recommendation System
+
+</h4>
+
+<h5>
+
+ಬೆಳೆ ಶಿಫಾರಸು ವ್ಯವಸ್ಥೆ
+
+</h5>
+
+<p>
+
+Machine Learning • Flask • Open-Meteo
+
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

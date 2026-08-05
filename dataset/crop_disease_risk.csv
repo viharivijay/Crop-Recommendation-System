@@ -1,0 +1,56 @@
+crop,high_humidity_risk,high_temperature_risk,low_temperature_risk,heavy_rainfall_risk,prevention,severity
+Rice,Blast Disease,Bacterial Leaf Blight,Sheath Blight,False Smut,Use resistant varieties and avoid excess standing water.,High
+Maize,Leaf Blight,Fall Armyworm,Downy Mildew,Stalk Rot,Regular field inspection and integrated pest management.,High
+Cotton,Boll Rot,Leaf Curl Virus,Root Rot,Bacterial Blight,Use certified seeds and drip irrigation.,High
+Sugarcane,Red Rot,Smut,Sett Rot,Pokkah Boeng,Use disease-free seed setts and proper drainage.,High
+Groundnut,Leaf Spot,Aphids,Root Rot,Collar Rot,Apply fungicide when required and avoid waterlogging.,Medium
+Millets,Rust Disease,Smut,Downy Mildew,Ergot,Crop rotation and resistant varieties.,Medium
+Ragi,Blast Disease,Stem Borer,Leaf Spot,Foot Rot,Use resistant seeds and timely fungicide spray.,Medium
+Jowar,Anthracnose,Shoot Fly,Downy Mildew,Grain Mold,Maintain field sanitation.,Medium
+Bajra,Downy Mildew,Stem Borer,Rust,Ergot,Use certified seeds and crop rotation.,Medium
+Wheat,Rust Disease,Termite Attack,Powdery Mildew,Fusarium Head Blight,Use resistant varieties and balanced fertilizer.,High
+Barley,Leaf Rust,Aphids,Powdery Mildew,Net Blotch,Timely fungicide application.,Medium
+Pigeonpeas,Fusarium Wilt,Pod Borer,Sterility Mosaic,Phytophthora Blight,Use resistant varieties and crop rotation.,High
+Chickpea,Ascochyta Blight,Pod Borer,Fusarium Wilt,Root Rot,Treat seeds before sowing.,High
+Lentil,Rust Disease,Aphids,Wilt,Root Rot,Use disease-free seeds.,Medium
+Blackgram,Yellow Mosaic Virus,Whitefly,Cercospora Leaf Spot,Root Rot,Control whiteflies and use resistant varieties.,High
+Green Gram,Yellow Mosaic Virus,Thrips,Leaf Spot,Root Rot,Use certified seeds and timely pest control.,High
+Kidney Beans,Bean Rust,Bean Fly,Anthracnose,Root Rot,Maintain proper spacing and drainage.,Medium
+Soybean,Rust Disease,Stem Fly,Charcoal Rot,Root Rot,Use resistant varieties and avoid waterlogging.,High
+Mustard,White Rust,Aphids,Alternaria Blight,Sclerotinia Rot,Monitor aphids and apply fungicide if required.,Medium
+Sesame,Leaf Spot,Gall Fly,Root Rot,Phyllody Disease,Use healthy seeds and crop rotation.,Medium
+Sunflower,Downy Mildew,Head Borer,Rust,Sclerotinia Stem Rot,Use resistant hybrids.,Medium
+Coffee,Coffee Rust,Berry Borer,Root Rot,Black Rot,Maintain shade and prune regularly.,High
+Tea,Blister Blight,Red Spider Mite,Root Rot,Grey Blight,Ensure proper air circulation.,High
+Coconut,Bud Rot,Rhinoceros Beetle,Stem Bleeding,Basal Stem Rot,Remove infected tissues and maintain hygiene.,High
+Arecanut,Fruit Rot,Spindle Bug,Yellow Leaf Disease,Foot Rot,Ensure proper drainage and sanitation.,High
+Cashew,Anthracnose,Tea Mosquito Bug,Stem Canker,Powdery Mildew,Regular pruning and fungicide spray.,Medium
+Banana,Sigatoka,Nematodes,Panama Wilt,Bacterial Wilt,Use disease-free suckers and proper drainage.,High
+Mango,Anthracnose,Fruit Fly,Powdery Mildew,Stem End Rot,Prune infected branches and spray fungicide.,High
+Orange,Citrus Canker,Citrus Psylla,Gummosis,Root Rot,Use certified planting material.,High
+Papaya,Ring Spot Virus,Mites,Damping Off,Stem Rot,Remove infected plants immediately.,High
+Pomegranate,Bacterial Blight,Fruit Borer,Wilt,Fruit Rot,Maintain orchard sanitation.,High
+Grapes,Downy Mildew,Thrips,Powdery Mildew,Bunch Rot,Regular fungicide schedule.,High
+Apple,Apple Scab,Codling Moth,Fire Blight,Root Rot,Prune infected branches and maintain hygiene.,High
+Guava,Wilt Disease,Fruit Fly,Anthracnose,Root Rot,Use disease-free seedlings.,Medium
+Watermelon,Powdery Mildew,Fruit Fly,Fusarium Wilt,Anthracnose,Crop rotation and proper irrigation.,Medium
+Tomato,Late Blight,Whitefly,Early Blight,Bacterial Wilt,Use resistant varieties and avoid overhead irrigation.,High
+Onion,Purple Blotch,Thrips,Downy Mildew,Neck Rot,Ensure good ventilation and timely fungicide application.,Medium
+Potato,Late Blight,Aphids,Early Blight,Black Scurf,Use certified seed tubers.,High
+Brinjal,Shoot and Fruit Borer,Whitefly,Bacterial Wilt,Phomopsis Blight,Remove infected shoots and use pheromone traps.,High
+Cabbage,Black Rot,Diamondback Moth,Downy Mildew,Club Root,Practice crop rotation and proper spacing.,Medium
+Cauliflower,Downy Mildew,Aphids,Black Rot,Club Root,Maintain field hygiene and proper drainage.,Medium
+Chilli,Leaf Curl Virus,Thrips,Damping Off,Anthracnose,Use virus-free seedlings and pest control.,High
+Turmeric,Rhizome Rot,Shoot Borer,Leaf Spot,Bacterial Wilt,Use healthy rhizomes and proper drainage.,Medium
+Ginger,Rhizome Rot,Shoot Borer,Bacterial Wilt,Soft Rot,Use disease-free rhizomes and avoid waterlogging.,High
+Garlic,Purple Blotch,Thrips,White Rot,Stem Rot,Use healthy cloves and maintain drainage.,Medium
+Peas,Powdery Mildew,Aphids,Fusarium Wilt,Root Rot,Use resistant varieties and avoid overcrowding.,Medium
+Beans,Anthracnose,Bean Fly,Rust,Root Rot,Use certified seeds and crop rotation.,Medium
+Cucumber,Downy Mildew,Fruit Fly,Powdery Mildew,Anthracnose,Ensure proper ventilation and drainage.,Medium
+Pumpkin,Powdery Mildew,Red Pumpkin Beetle,Downy Mildew,Fruit Rot,Use crop rotation and pest monitoring.,Medium
+Bottle Gourd,Downy Mildew,Fruit Fly,Powdery Mildew,Stem Rot,Maintain proper spacing and sanitation.,Medium
+Bitter Gourd,Powdery Mildew,Fruit Fly,Mosaic Virus,Fruit Rot,Use resistant varieties and remove infected vines.,Medium
+Drumstick,Leaf Spot,Caterpillars,Root Rot,Stem Rot,Regular pruning and sanitation.,Low
+Spinach,Downy Mildew,Leaf Miner,Damping Off,Leaf Spot,Avoid excessive irrigation and maintain spacing.,Low
+Coriander,Powdery Mildew,Aphids,Stem Rot,Leaf Spot,Use disease-free seeds.,Low
+Fenugreek,Powdery Mildew,Aphids,Root Rot,Damping Off,Maintain proper drainage and crop rotation.,Low

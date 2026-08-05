@@ -1,0 +1,21 @@
+soil_type,nitrogen,phosphorus,potassium,ph,organic_matter,drainage,water_holding_capacity,fertility,description
+Black Soil,85,45,45,7.2,High,Moderate,High,High,Rich in clay and ideal for cotton sugarcane soybean and wheat
+Red Soil,60,35,35,6.5,Medium,Good,Medium,Medium,Well drained soil suitable for millets pulses groundnut and maize
+Laterite Soil,45,20,20,5.8,Low,Excellent,Low,Low,Acidic soil found in high rainfall regions suitable for coffee tea cashew
+Alluvial Soil,75,40,40,6.8,High,Good,High,High,Highly fertile soil suitable for rice wheat sugarcane vegetables and fruits
+Clay Soil,70,38,35,7.0,High,Poor,Very High,High,Retains water for long periods suitable for paddy cultivation
+Loamy Soil,80,45,42,6.8,High,Excellent,High,Very High,Best agricultural soil suitable for almost all crops
+Sandy Soil,35,18,20,6.0,Low,Excellent,Low,Low,Light soil requiring frequent irrigation suitable for groundnut watermelon and coconut
+Mountain Soil,55,25,30,6.2,Medium,Good,Medium,Medium,Found in hilly regions suitable for tea coffee spices and fruits
+Peaty Soil,90,50,40,5.5,Very High,Poor,Very High,High,Organic rich acidic soil suitable for vegetables and plantation crops
+Saline Soil,30,15,20,8.5,Low,Poor,Medium,Low,Contains excess salts requires reclamation before cultivation
+Forest Soil,65,35,38,6.3,High,Good,High,Medium,Rich in organic matter suitable for plantation crops and spices
+Desert Soil,25,10,12,8.0,Very Low,Excellent,Very Low,Low,Sandy soil with low fertility requiring irrigation
+Marshy Soil,95,55,45,5.2,Very High,Poor,Very High,Medium,Waterlogged soil rich in organic matter
+Gravelly Soil,40,18,22,6.7,Low,Excellent,Low,Low,Contains stones and gravel suitable only for selected crops
+Silty Soil,72,40,38,6.7,Medium,Good,High,High,Fertile soil with good moisture retention suitable for vegetables cereals and pulses
+Chalky Soil,50,30,35,7.8,Medium,Good,Medium,Medium,Alkaline soil rich in calcium carbonate
+Volcanic Soil,88,48,45,6.4,High,Excellent,High,Very High,Nutrient rich soil suitable for coffee tea fruits and vegetables
+Brown Soil,65,35,34,6.6,Medium,Good,Medium,Medium,Common agricultural soil suitable for cereals pulses and oilseeds
+Coastal Sandy Soil,32,18,20,6.4,Low,Excellent,Low,Low,Found near coastal regions suitable for coconut cashew and watermelon
+Delta Soil,82,42,40,6.9,High,Moderate,High,Very High,Highly fertile soil deposited by rivers ideal for rice sugarcane and vegetables

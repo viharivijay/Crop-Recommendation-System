@@ -1,0 +1,57 @@
+crop,min_temperature,max_temperature,min_humidity,max_humidity,min_rainfall_mm,max_rainfall_mm,preferred_soil,min_ph,max_ph,growing_season,water_requirement,sunlight_hours,duration_days
+Rice,20,35,70,95,100,300,Clay Soil|Alluvial Soil|Black Soil,5.5,7.0,Kharif,High,6-8,120
+Maize,18,32,50,75,60,150,Loamy Soil|Black Soil|Red Soil,5.5,7.5,Kharif,Medium,6-8,100
+Cotton,21,35,40,70,50,120,Black Soil|Loamy Soil,5.8,8.0,Kharif,Medium,8-10,180
+Sugarcane,20,38,60,85,100,250,Loamy Soil|Black Soil|Alluvial Soil,6.0,8.0,Annual,High,8-10,365
+Groundnut,20,30,40,70,50,100,Sandy Soil|Red Soil|Loamy Soil,6.0,7.5,Kharif,Low,7-9,110
+Millets,18,35,30,60,30,80,Red Soil|Sandy Soil,5.5,7.5,Kharif,Low,8-10,95
+Ragi,18,30,40,70,50,120,Red Soil|Laterite Soil,5.5,7.0,Kharif,Low,7-8,120
+Jowar,20,34,35,65,40,100,Black Soil|Red Soil,5.5,8.0,Kharif,Low,8-10,110
+Bajra,22,36,30,60,30,80,Sandy Soil|Red Soil,5.5,7.8,Kharif,Low,8-10,95
+Wheat,15,25,45,65,40,100,Alluvial Soil|Loamy Soil,6.0,7.5,Rabi,Medium,6-8,120
+Barley,12,24,40,60,30,90,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Low,6-8,110
+Pigeonpeas,20,35,40,70,60,150,Black Soil|Red Soil,6.0,7.5,Kharif,Low,7-9,180
+Chickpea,15,30,35,60,30,80,Loamy Soil|Black Soil,6.0,7.5,Rabi,Low,6-8,110
+Lentil,15,28,40,65,30,90,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Low,6-8,110
+Blackgram,22,34,45,75,60,120,Black Soil|Loamy Soil,6.0,7.5,Kharif,Low,7-9,90
+Green Gram,22,34,45,75,60,120,Loamy Soil|Black Soil,6.0,7.5,Kharif,Low,7-9,85
+Kidney Beans,16,28,50,75,70,150,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,6-8,100
+Soybean,20,30,50,75,60,120,Black Soil|Loamy Soil,6.0,7.5,Kharif,Medium,7-9,110
+Mustard,10,25,40,60,25,80,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Low,6-8,120
+Sesame,25,35,35,60,30,80,Sandy Soil|Red Soil,5.5,7.5,Kharif,Low,8-10,90
+Sunflower,20,32,40,65,40,100,Black Soil|Loamy Soil,6.0,7.5,Kharif,Low,8-10,100
+Coffee,18,28,60,90,150,300,Laterite Soil|Loamy Soil,5.5,6.5,Annual,Medium,4-6,300
+Tea,18,30,70,95,180,350,Laterite Soil|Mountain Soil,4.5,6.0,Annual,High,4-6,365
+Coconut,22,34,60,90,120,300,Sandy Soil|Laterite Soil,5.5,7.5,Annual,Medium,7-8,365
+Arecanut,18,32,70,95,150,350,Laterite Soil,5.5,6.8,Annual,Medium,4-6,365
+Cashew,20,35,50,80,80,180,Laterite Soil|Sandy Soil,5.5,6.8,Annual,Low,7-9,300
+Banana,22,35,60,90,120,250,Loamy Soil|Alluvial Soil,6.0,7.5,Annual,High,7-8,300
+Mango,20,36,40,75,60,150,Loamy Soil|Red Soil,5.5,7.5,Summer,Medium,8-10,365
+Orange,15,30,45,75,60,150,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,7-8,270
+Papaya,22,35,60,90,100,200,Loamy Soil|Alluvial Soil,6.0,7.0,Annual,Medium,7-8,270
+Pomegranate,18,35,40,70,40,100,Black Soil|Loamy Soil,6.5,7.5,Annual,Low,8-10,240
+Grapes,18,32,45,70,50,120,Loamy Soil|Black Soil,6.0,7.5,Rabi,Medium,8-10,240
+Apple,10,24,45,70,80,180,Mountain Soil|Loamy Soil,5.5,6.8,Rabi,Medium,6-8,280
+Guava,20,35,45,75,60,150,Loamy Soil|Alluvial Soil,5.5,7.5,Annual,Medium,7-8,365
+Watermelon,24,35,40,65,30,80,Sandy Soil|Loamy Soil,6.0,7.5,Summer,Medium,8-10,90
+Muskmelon,24,35,40,65,30,80,Sandy Soil|Loamy Soil,6.0,7.5,Summer,Medium,8-10,90
+Tomato,18,30,50,80,50,120,Loamy Soil|Alluvial Soil,6.0,7.0,Rabi,Medium,6-8,90
+Onion,15,30,50,70,40,100,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,6-8,120
+Potato,15,25,45,70,40,100,Loamy Soil|Alluvial Soil,5.5,7.0,Rabi,Medium,6-8,100
+Brinjal,22,35,50,80,60,150,Loamy Soil|Alluvial Soil,5.5,7.5,Annual,Medium,7-8,150
+Cabbage,15,25,60,80,60,150,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,5-7,90
+Cauliflower,15,25,60,80,60,150,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,5-7,90
+Chilli,20,32,45,75,50,120,Red Soil|Loamy Soil,6.0,7.5,Kharif,Medium,7-8,150
+Turmeric,20,30,60,90,100,250,Laterite Soil|Loamy Soil,5.5,7.0,Kharif,Medium,5-7,270
+Ginger,20,30,60,90,120,250,Laterite Soil|Loamy Soil,5.5,7.0,Kharif,Medium,5-7,240
+Garlic,15,28,45,70,40,100,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,6-8,120
+Peas,12,24,50,75,40,100,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Low,5-7,100
+Beans,18,30,50,75,50,120,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Medium,6-8,90
+Cucumber,22,35,55,80,50,120,Sandy Soil|Loamy Soil,6.0,7.5,Summer,Medium,7-9,70
+Pumpkin,22,35,50,80,60,150,Loamy Soil|Sandy Soil,6.0,7.5,Kharif,Medium,7-9,100
+Bottle Gourd,22,35,55,80,60,150,Loamy Soil|Alluvial Soil,6.0,7.5,Summer,Medium,7-9,90
+Bitter Gourd,22,34,55,80,60,150,Loamy Soil|Red Soil,6.0,7.5,Summer,Medium,7-9,100
+Drumstick,25,38,35,65,30,80,Red Soil|Loamy Soil,6.2,7.8,Annual,Low,8-10,365
+Spinach,15,28,55,80,40,100,Loamy Soil|Alluvial Soil,6.0,7.5,Annual,Medium,4-6,45
+Coriander,15,28,45,70,30,80,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Low,5-7,90
+Fenugreek,15,28,45,70,30,80,Loamy Soil|Alluvial Soil,6.0,7.5,Rabi,Low,5-7,90

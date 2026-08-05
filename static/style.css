@@ -1,0 +1,1231 @@
+/* ===========================================================
+   AI Crop Recommendation System
+   Premium UI
+=========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    color:white;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+/* ==========================================
+Animated Background
+========================================== */
+
+.background{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-1;
+
+    overflow:hidden;
+
+}
+
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    animation:float 18s infinite linear;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+.x1{
+
+    width:250px;
+
+    height:250px;
+
+    left:-80px;
+
+    top:15%;
+
+}
+
+
+.x2{
+
+    width:180px;
+
+    height:180px;
+
+    right:10%;
+
+    top:5%;
+
+}
+
+
+.x3{
+
+    width:300px;
+
+    height:300px;
+
+    bottom:-120px;
+
+    left:20%;
+
+}
+
+
+.x4{
+
+    width:140px;
+
+    height:140px;
+
+    bottom:20%;
+
+    right:15%;
+
+}
+
+
+.x5{
+
+    width:220px;
+
+    height:220px;
+
+    left:50%;
+
+    top:55%;
+
+}
+
+
+/* ==========================================
+Animation
+========================================== */
+
+@keyframes float{
+
+0%{
+
+transform:
+
+translateY(0px)
+
+rotate(0deg);
+
+}
+
+50%{
+
+transform:
+
+translateY(-35px)
+
+rotate(180deg);
+
+}
+
+100%{
+
+transform:
+
+translateY(0px)
+
+rotate(360deg);
+
+}
+
+}
+
+
+/* ==========================================
+Navbar
+========================================== */
+
+.navbar{
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
+}
+
+
+.navbar-brand{
+
+    font-size:1.4rem;
+
+    letter-spacing:.5px;
+
+}
+
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+
+.nav-link:hover{
+
+    color:#90ee90 !important;
+
+}
+
+
+/* ==========================================
+Hero
+========================================== */
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+
+.hero h1{
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+
+.hero p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+}
+
+
+.hero-image{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+    animation:heroFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes heroFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================
+Glass Card
+========================================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    padding:45px;
+
+    margin-top:20px;
+
+    margin-bottom:60px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+}
+
+
+.glass-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 55px rgba(0,0,0,.45);
+
+}
+
+
+/* ==========================================
+Form
+========================================== */
+
+.form-label{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:white;
+
+}
+
+
+.form-control,
+
+.form-select{
+
+    height:58px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgba(255,255,255,.15);
+
+    color:white;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+
+.form-control::placeholder{
+
+    color:#d7d7d7;
+
+}
+
+
+.form-control:focus,
+
+.form-select:focus{
+
+    background:rgba(255,255,255,.22);
+
+    color:white;
+
+    border:none;
+
+    outline:none;
+
+    box-shadow:0 0 15px rgba(0,255,150,.35);
+
+}
+
+
+/* Dropdown options */
+
+select option{
+
+    color:black;
+
+}
+
+
+/* ==========================================
+Button
+========================================== */
+
+.btn-success{
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:15px 45px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+.btn-success:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 30px rgba(0,255,120,.35);
+
+}
+
+
+/* ==========================================
+Badges
+========================================== */
+
+.badge{
+
+    margin-right:12px;
+
+    margin-top:10px;
+
+    font-size:14px;
+
+}
+
+
+/* ==========================================
+Footer
+========================================== */
+
+.footer{
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(15px);
+
+    padding:30px 0;
+
+    margin-top:50px;
+
+}
+
+
+.footer h5{
+
+    color:white;
+
+    margin-bottom:10px;
+
+}
+
+
+.footer p{
+
+    color:#d8d8d8;
+
+    margin:0;
+
+}
+
+
+/* ==========================================
+Responsive
+========================================== */
+
+@media(max-width:992px){
+
+.hero{
+
+    text-align:center;
+
+}
+
+.hero-image{
+
+    margin-top:40px;
+
+}
+
+.glass-card{
+
+    padding:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:2.2rem;
+
+}
+
+.display-4{
+
+    font-size:2.2rem;
+
+}
+
+.form-control,
+
+.form-select{
+
+    height:52px;
+
+}
+
+.btn-success{
+
+    width:100%;
+
+}
+
+.badge{
+
+    display:block;
+
+    margin-bottom:12px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.glass-card{
+
+    padding:22px;
+
+}
+
+.navbar-brand{
+
+    font-size:18px;
+
+}
+
+.hero{
+
+    padding:40px 0;
+
+}
+
+}
+/* ===========================================================
+   AI Crop Recommendation System
+   Premium UI
+=========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    color:white;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+/* ==========================================
+Animated Background
+========================================== */
+
+.background{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-1;
+
+    overflow:hidden;
+
+}
+
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    animation:float 18s infinite linear;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+.x1{
+
+    width:250px;
+
+    height:250px;
+
+    left:-80px;
+
+    top:15%;
+
+}
+
+
+.x2{
+
+    width:180px;
+
+    height:180px;
+
+    right:10%;
+
+    top:5%;
+
+}
+
+
+.x3{
+
+    width:300px;
+
+    height:300px;
+
+    bottom:-120px;
+
+    left:20%;
+
+}
+
+
+.x4{
+
+    width:140px;
+
+    height:140px;
+
+    bottom:20%;
+
+    right:15%;
+
+}
+
+
+.x5{
+
+    width:220px;
+
+    height:220px;
+
+    left:50%;
+
+    top:55%;
+
+}
+
+
+/* ==========================================
+Animation
+========================================== */
+
+@keyframes float{
+
+0%{
+
+transform:
+
+translateY(0px)
+
+rotate(0deg);
+
+}
+
+50%{
+
+transform:
+
+translateY(-35px)
+
+rotate(180deg);
+
+}
+
+100%{
+
+transform:
+
+translateY(0px)
+
+rotate(360deg);
+
+}
+
+}
+
+
+/* ==========================================
+Navbar
+========================================== */
+
+.navbar{
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
+}
+
+
+.navbar-brand{
+
+    font-size:1.4rem;
+
+    letter-spacing:.5px;
+
+}
+
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+
+.nav-link:hover{
+
+    color:#90ee90 !important;
+
+}
+
+
+/* ==========================================
+Hero
+========================================== */
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+
+.hero h1{
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+
+.hero p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+}
+
+
+.hero-image{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+    animation:heroFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes heroFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+} /* ===========================================================
+   AI Crop Recommendation System
+   Premium UI
+=========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    color:white;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+
+/* ==========================================
+Animated Background
+========================================== */
+
+.background{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-1;
+
+    overflow:hidden;
+
+}
+
+
+.circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    animation:float 18s infinite linear;
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+.x1{
+
+    width:250px;
+
+    height:250px;
+
+    left:-80px;
+
+    top:15%;
+
+}
+
+
+.x2{
+
+    width:180px;
+
+    height:180px;
+
+    right:10%;
+
+    top:5%;
+
+}
+
+
+.x3{
+
+    width:300px;
+
+    height:300px;
+
+    bottom:-120px;
+
+    left:20%;
+
+}
+
+
+.x4{
+
+    width:140px;
+
+    height:140px;
+
+    bottom:20%;
+
+    right:15%;
+
+}
+
+
+.x5{
+
+    width:220px;
+
+    height:220px;
+
+    left:50%;
+
+    top:55%;
+
+}
+
+
+/* ==========================================
+Animation
+========================================== */
+
+@keyframes float{
+
+0%{
+
+transform:
+
+translateY(0px)
+
+rotate(0deg);
+
+}
+
+50%{
+
+transform:
+
+translateY(-35px)
+
+rotate(180deg);
+
+}
+
+100%{
+
+transform:
+
+translateY(0px)
+
+rotate(360deg);
+
+}
+
+}
+
+
+/* ==========================================
+Navbar
+========================================== */
+
+.navbar{
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(12px);
+
+}
+
+
+.navbar-brand{
+
+    font-size:1.4rem;
+
+    letter-spacing:.5px;
+
+}
+
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+
+.nav-link:hover{
+
+    color:#90ee90 !important;
+
+}
+
+
+/* ==========================================
+Hero
+========================================== */
+
+.hero{
+
+    padding:70px 0;
+
+}
+
+
+.hero h1{
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+
+.hero p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+}
+
+
+.hero-image{
+
+    width:100%;
+
+    max-width:500px;
+
+    border-radius:20px;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+    animation:heroFloat 4s ease-in-out infinite;
+
+}
+
+
+@keyframes heroFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+/* ==========================================================
+RESULT PAGE
+========================================================== */
+
+.result-container{
+
+    width:100%;
+
+    padding-left:45px;
+
+    padding-right:45px;
+
+}
+
+
+.result-card{
+
+    width:100%;
+
+    max-width:1600px;
+
+    margin:auto;
+
+}
+
+
+/* ==========================================================
+TABLES
+========================================================== */
+
+.table{
+
+    width:100% !important;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    font-size:18px;
+
+}
+
+
+.table th{
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+
+.table td{
+
+    text-align:center;
+
+    vertical-align:middle;
+
+}
+
+
+/* ==========================================================
+WEATHER CARDS
+========================================================== */
+
+.glass-card.text-center{
+
+    min-height:160px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+/* ==========================================================
+RESULT PAGE HEADINGS
+========================================================== */
+
+.result-card h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+
+.result-card h3{
+
+    font-size:34px;
+
+}
+
+
+.result-card h4{
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ==========================================================
+BACK BUTTON
+========================================================== */
+
+.result-card .btn{
+
+    min-width:250px;
+
+    font-size:22px;
+
+}
+
+
+/* ==========================================================
+LARGE SCREEN
+========================================================== */
+
+@media(min-width:1400px){
+
+.result-container{
+
+padding-left:80px;
+
+padding-right:80px;
+
+}
+
+}
