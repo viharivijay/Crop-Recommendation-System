@@ -157,7 +157,7 @@ This makes the Machine Learning model more understandable and transparent.
 ---
 
 
-## 🌱 Applications
+##  Applications
 
 This project can be useful for:
 
@@ -213,10 +213,6 @@ Through this project, the following concepts were implemented:
 
 AI/ML Engineering Student
 
-### 🔗 Connect
-
-* GitHub: Add your GitHub profile link
-* LinkedIn: Add your LinkedIn profile link
 
 ---
 
