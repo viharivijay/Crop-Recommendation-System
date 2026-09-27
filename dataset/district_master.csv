@@ -1,0 +1,32 @@
+district,state,soil_type,latitude,longitude,elevation_m,climate_zone,average_annual_rainfall_mm,water_level,irrigation,groundwater_status,major_water_source,drought_risk,flood_risk,recommended_irrigation,major_crops,preferred_crops
+Bagalkote,Karnataka,Black Soil,16.1867,75.6961,532,Semi-Arid,620,Medium,Available,Moderate,Almatti Dam,Medium,Low,Sprinkler,Sugarcane|Jowar|Groundnut,Sugarcane|Maize|Groundnut
+Ballari,Karnataka,Black Soil,15.1394,76.9214,450,Semi-Arid,560,Low,Limited,Poor,Tungabhadra Dam,High,Low,Drip,Cotton|Groundnut|Millets,Cotton|Groundnut|Millets
+Belagavi,Karnataka,Black Soil,15.8497,74.4977,762,Tropical Monsoon,1180,High,Available,Good,Malaprabha River,Low,Medium,Sprinkler,Sugarcane|Maize|Groundnut,Sugarcane|Maize|Groundnut
+Bengaluru Rural,Karnataka,Red Soil,13.2841,77.6078,915,Tropical Savanna,910,Medium,Available,Moderate,Groundwater,Medium,Low,Drip,Ragi|Vegetables|Maize,Ragi|Maize|Vegetables
+Bengaluru Urban,Karnataka,Red Soil,12.9716,77.5946,920,Tropical Savanna,970,Medium,Available,Moderate,Cauvery Water Supply,Medium,Low,Drip,Vegetables|Flowers|Ragi,Vegetables|Flowers|Ragi
+Bidar,Karnataka,Black Soil,17.9133,77.5301,710,Semi-Arid,860,Medium,Limited,Moderate,Groundwater,Medium,Low,Sprinkler,Tur|Soybean|Cotton,Tur|Soybean|Cotton
+Chamarajanagar,Karnataka,Red Soil,11.9261,76.94,690,Tropical Savanna,760,Medium,Available,Moderate,Cauvery River,Medium,Low,Sprinkler,Ragi|Maize|Sugarcane,Ragi|Maize|Sugarcane
+Chikkaballapur,Karnataka,Red Soil,13.435,77.7315,915,Semi-Arid,720,Low,Limited,Poor,Groundwater,High,Low,Drip,Grapes|Mango|Ragi,Grapes|Mango|Ragi
+Chikkamagaluru,Karnataka,Laterite Soil,13.3153,75.7754,1090,Tropical Monsoon,1850,Very High,Available,Excellent,Bhadra River,Low,Medium,Rain-fed + Drip,Coffee|Arecanut|Pepper,Coffee|Pepper|Cardamom
+Chitradurga,Karnataka,Red Soil,14.2306,76.398,732,Semi-Arid,610,Low,Limited,Poor,Groundwater,High,Low,Drip,Groundnut|Millets|Jowar,Groundnut|Millets|Jowar
+Dakshina Kannada,Karnataka,Laterite Soil,12.9141,74.856,22,Tropical Monsoon,3900,Very High,Available,Excellent,Netravati River,Low,High,Rain-fed,Arecanut|Coconut|Paddy,Arecanut|Coconut|Paddy
+Davanagere,Karnataka,Black Soil,14.4644,75.9218,597,Tropical Savanna,760,Medium,Available,Moderate,Tungabhadra River,Medium,Low,Sprinkler,Maize|Cotton|Paddy,Maize|Cotton|Paddy
+Dharwad,Karnataka,Black Soil,15.4589,75.0078,731,Tropical Savanna,810,Medium,Available,Moderate,Malaprabha River,Medium,Low,Sprinkler,Jowar|Cotton|Groundnut,Jowar|Cotton|Groundnut
+Gadag,Karnataka,Black Soil,15.431,75.634,655,Semi-Arid,650,Low,Limited,Poor,Groundwater,High,Low,Drip,Cotton|Jowar|Groundnut,Cotton|Jowar|Groundnut
+Hassan,Karnataka,Red Soil,13.0033,76.1004,950,Tropical Monsoon,1450,High,Available,Good,Hemavathi River,Low,Medium,Sprinkler,Coffee|Paddy|Arecanut,Coffee|Paddy|Arecanut
+Haveri,Karnataka,Black Soil,14.795,75.3991,605,Tropical Savanna,790,Medium,Available,Moderate,Tungabhadra River,Medium,Low,Sprinkler,Cotton|Maize|Groundnut,Cotton|Maize|Groundnut
+Kalaburagi,Karnataka,Black Soil,17.3297,76.8343,454,Semi-Arid,690,Low,Limited,Poor,Bhima River,High,Low,Drip,Tur|Jowar|Cotton,Tur|Jowar|Cotton
+Kodagu,Karnataka,Laterite Soil,12.4244,75.7382,1170,Tropical Monsoon,3400,Very High,Available,Excellent,Cauvery River,Low,High,Rain-fed,Coffee|Pepper|Cardamom,Coffee|Pepper|Cardamom
+Kolar,Karnataka,Red Soil,13.1367,78.1299,849,Semi-Arid,705,Low,Limited,Poor,Groundwater,High,Low,Drip,Ragi|Tomato|Mango,Ragi|Tomato|Mango
+Koppal,Karnataka,Black Soil,15.3459,76.1548,529,Semi-Arid,640,Low,Limited,Poor,Tungabhadra River,High,Low,Drip,Cotton|Groundnut|Jowar,Cotton|Groundnut|Jowar
+Mandya,Karnataka,Black Soil,12.5218,76.8951,678,Tropical Savanna,780,Very High,Available,Excellent,Krishna Raja Sagara Dam,Low,Low,Flood or Sprinkler,Sugarcane|Paddy|Banana,Sugarcane|Paddy|Banana
+Mysuru,Karnataka,Black Soil,12.2958,76.6394,770,Tropical Savanna,810,High,Available,Good,Cauvery River,Low,Low,Sprinkler,Paddy|Sugarcane|Maize,Rice|Maize|Groundnut
+Raichur,Karnataka,Black Soil,16.212,77.3439,407,Semi-Arid,620,Low,Limited,Poor,Krishna River,High,Low,Drip,Paddy|Cotton|Chilli,Paddy|Cotton|Chilli
+Ramanagara,Karnataka,Red Soil,12.7219,77.2813,747,Tropical Savanna,760,Medium,Available,Moderate,Cauvery River,Medium,Low,Drip,Ragi|Coconut|Silk Mulberry,Ragi|Coconut|Mulberry
+Shivamogga,Karnataka,Laterite Soil,13.9299,75.5681,569,Tropical Monsoon,1750,High,Available,Good,Tunga River,Low,Medium,Sprinkler,Paddy|Arecanut|Maize,Paddy|Arecanut|Maize
+Tumakuru,Karnataka,Red Soil,13.3409,77.101,822,Tropical Savanna,730,Medium,Available,Moderate,Groundwater,Medium,Low,Drip,Ragi|Groundnut|Coconut,Ragi|Groundnut|Coconut
+Udupi,Karnataka,Laterite Soil,13.3409,74.7421,39,Tropical Monsoon,4100,Very High,Available,Excellent,Swarna River,Low,High,Rain-fed,Coconut|Arecanut|Paddy,Coconut|Arecanut|Paddy
+Uttara Kannada,Karnataka,Laterite Soil,14.8183,74.1419,22,Tropical Monsoon,3600,Very High,Available,Excellent,Kali River,Low,High,Rain-fed,Arecanut|Coconut|Cashew,Arecanut|Coconut|Cashew
+Vijayapura,Karnataka,Black Soil,16.8302,75.71,593,Semi-Arid,590,Low,Limited,Poor,Krishna River,High,Low,Drip,Grapes|Jowar|Cotton,Grapes|Jowar|Cotton
+Vijayanagara,Karnataka,Black Soil,15.1156,76.429,480,Semi-Arid,600,Low,Limited,Poor,Tungabhadra River,High,Low,Drip,Cotton|Groundnut|Paddy,Cotton|Groundnut|Paddy
+Yadgir,Karnataka,Black Soil,16.77,77.1376,389,Semi-Arid,610,Low,Limited,Poor,Krishna River,High,Low,Drip,Tur|Cotton|Jowar,Tur|Cotton|Jowar

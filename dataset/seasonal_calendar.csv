@@ -1,0 +1,13 @@
+month,season,average_temperature_c,average_rainfall_mm,farming_activity,recommended_crops
+January,Rabi,22,20,Harvesting and Irrigation,Wheat Chickpea Lentil Mustard Onion Potato
+February,Rabi,24,25,Harvesting and Crop Maintenance,Wheat Chickpea Lentil Mustard Potato Peas
+March,Zaid,28,35,Land Preparation and Sowing,Watermelon Muskmelon Cucumber Pumpkin Bottle Gourd
+April,Zaid,31,40,Irrigation and Crop Care,Watermelon Muskmelon Cucumber Bitter Gourd Bottle Gourd
+May,Zaid,34,60,Irrigation and Harvesting,Watermelon Muskmelon Cucumber Pumpkin
+June,Kharif,30,180,Sowing,Rice Maize Cotton Soybean Groundnut Sugarcane Ragi Jowar Bajra Turmeric Ginger
+July,Kharif,28,280,Crop Establishment,Rice Cotton Maize Groundnut Millets Pigeonpeas Blackgram Green Gram
+August,Kharif,27,260,Fertilization and Weed Management,Rice Cotton Soybean Sugarcane Turmeric Ginger
+September,Kharif,27,190,Crop Growth Monitoring,Rice Cotton Maize Groundnut Millets
+October,Rabi,26,90,Land Preparation and Sowing,Wheat Chickpea Mustard Lentil Potato Onion Garlic
+November,Rabi,23,35,Crop Growth,Wheat Chickpea Lentil Mustard Peas Cabbage Cauliflower
+December,Rabi,21,20,Crop Maintenance,Wheat Mustard Onion Potato Garlic Peas
